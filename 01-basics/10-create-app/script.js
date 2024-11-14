@@ -2,7 +2,6 @@ import { defineComponent, createApp } from 'vue'
 
 const App = defineComponent({
   name: 'App',
-
   setup() {
     const date = new Date().toLocaleDateString(navigator.language, { dateStyle: 'long' })
     return {
@@ -10,7 +9,8 @@ const App = defineComponent({
     }
   },
 
-  template: `<div>Сегодня {{ date }}</div>`,
+  template: `<div> Сегодня {{date}} </div>`,
 })
 
-createApp(App).mount('#app')
+const app = createApp(App)
+app.mount('#app')
