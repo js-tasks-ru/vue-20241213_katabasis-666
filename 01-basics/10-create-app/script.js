@@ -8,6 +8,7 @@ const App = defineComponent({
       date,
     }
   },
+
   template: `<div> Сегодня {{date}} </div>`,
 })
 
